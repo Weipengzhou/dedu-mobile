@@ -1,6 +1,6 @@
 import { Drawer, List, NavBar } from 'antd-mobile';
-import ReactDOM from 'react-dom';
-import React, { Component } from 'react';
+
+import React from 'react';
 import './LeftNav.less';
 class LeftNav extends React.Component {
   state = {
@@ -31,7 +31,7 @@ class LeftNav extends React.Component {
         onOpenChange={this.onOpenChange}
       >
         {this.props.text}
-      
+
       </Drawer>
     </div>);
   }

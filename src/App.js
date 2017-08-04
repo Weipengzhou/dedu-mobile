@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { Drawer, List, NavBar } from 'antd-mobile';
+import React from 'react';
 
 import './App.less';
 import LeftNav from './components/LeftNav/LeftNav';
@@ -9,7 +8,7 @@ class App extends React.Component {
     return (
       <div className="App">
 
-        <LeftNav text={<Index/> }></LeftNav>
+        <LeftNav text={<Index/>}></LeftNav>
 
       </div>
     );
