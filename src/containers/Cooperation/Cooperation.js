@@ -8,6 +8,7 @@ import five from './5.png';
 import six from './6.png';
 import seven from './7.png';
 import ajax from '../../components/ajax/ajax';
+import LeftNav from '../../components/LeftNav/LeftNav';
 let list = [{'src':one,'name':'合作设计师'},{'src':two,'name':'房产中介'},{'src':three,'name':'办公租赁'},{'src':four,'name':'施工班组'},{'src':five,'name':'空调消防'},{'src':six,'name':'家具供应商'},{'src':seven,'name':'其他'}]
 const Online =(props)=>(
   <ul>
@@ -26,7 +27,7 @@ const Online =(props)=>(
 const Button = (props) => (
   <div><input type={props.type} placeholder={props.placeholder} className={props.className} onChange={(e) => props.onChange({value: e.target.value, name: props.name})}/></div>
 )
-class  Cooperation extends React.Component{
+class  Index extends React.Component{
   constructor(props){
     super(props);
     this.closeModal = this.closeModal.bind(this);
@@ -155,6 +156,14 @@ class  Cooperation extends React.Component{
 
 
       </div>
+    )
+  }
+}
+
+class Cooperation extends React.Component{
+  render(){
+    return(
+      <LeftNav text={<Index/>}></LeftNav>
     )
   }
 }

@@ -2,7 +2,7 @@ body{background-color: #FFF}
 .Stuff{
 
 .bottom{
-    width: 7.2rem;padding: 0.15rem;
+    width: 7.2rem;padding: 0.15rem;position: relative;
   .center{
     width: 4.5rem;
     height: 1.3rem;
@@ -34,4 +34,39 @@ body{background-color: #FFF}
     }
   }
 }
+
+.model{
+  width: 7.5rem;height:100%;position:fixed;z-index: ;top: 0;left:0;z-index:5;
+  -webkit-animation-name: fadeIn; /*动画名称*/
+-webkit-animation-duration: 0.6s; /*动画持续时间*/
+-webkit-animation-iteration-count: 1; /*动画次数*/
+-webkit-animation-delay: 0s; /*延迟时间*/
+  .mask{width: 7.5rem;height: 100%;background:rgba(0, 0, 0, 0.5);position: absolute;z-index: 1}
+  .to{  width: 5.8rem;margin: 1.9rem auto;height: 5.6rem;background-color:#FFF;position: relative;z-index: 2;padding: 0.5rem;border-radius: 0.1rem;box-shadow: 1px 3px 1px #ccc;
+    input{  width: 5.55rem;  height: 0.6rem;  border: 0.01rem solid #dcdcdc;  margin-top: 0.22rem;  padding-left: 0.1rem;  color: #999999;  font-size: 0.28rem;}
+    h2{font-size: 0.28rem;color:#000000;padding-bottom:0.35rem;text-align:left;padding-left: 0.08rem;
+      span{font-size: 0.2rem;color: #898989;}
+      }
+    i{font-style: normal;color: #000;position: absolute;right: 0.2rem;top:0.2rem;width: 0.3rem;height: 0.3rem;display: inline-block;cursor: pointer;}
+    button{margin-top: 0.8rem;border-radius: 0.41rem;background-color: rgb(172, 226, 89);width: 4.4rem;height: 0.85rem;border:none;box-shadow: 0.01rem 0.02rem 0.01rem #ccc;font-size: 0.32rem;color: #FFF;}
+     }
+      }
+
+
+       .on{display: block}
+      .ono{border: 1px solid red!important}
+      .off{display: none}
+      @-webkit-keyframes fadeIn {
+      0% {
+      opacity: 0; /*初始状态 透明度为0*/
+      }
+      50% {
+      opacity: 0; /*中间状态 透明度为0*/
+      }
+      100% {
+      opacity: 1; /*结尾状态 透明度为1*/
+      }
+      }
+
+    
 }

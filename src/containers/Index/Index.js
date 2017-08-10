@@ -5,11 +5,11 @@ import two from './2.png';
 import three from './3.png';
 import four from './4.png';
 import Header from '../../components/Header/Header';
+import LeftNav from '../../components/LeftNav/LeftNav';
 
- class Index extends React.Component {
-
+ class App extends React.Component {
   render() {
-    console.log(this.state)
+
     return (
       <div className='Index'>
         <Header/>
@@ -57,5 +57,12 @@ import Header from '../../components/Header/Header';
   }
 
 }
+class Index extends React.Component{
+  render(){
+    return(
+      <LeftNav text={<App/>}></LeftNav>
+    )
+  }
+}
 
-export default Index
+export default Index;

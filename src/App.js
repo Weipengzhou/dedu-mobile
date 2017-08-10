@@ -1,21 +1,20 @@
 import React from 'react';
-
-import './App.less';
-import LeftNav from './components/LeftNav/LeftNav';
+import { Router, Route, hashHistory} from 'react-router';
+import About from './containers/About/About';
+import Cooperation from './containers/Cooperation/Cooperation';
+import DesignCases from './containers/DesignCases/DesignCases';
+import DesignCasesAbout from './containers/DesignCasesAbout/DesignCasesAbout';
 import Index from './containers/Index/Index';
 import Stuff from './containers/Stuff/Stuff';
-import Cooperation from './containers/Cooperation/Cooperation';
-import About from './containers/About/About';
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
+export default(
 
-        <LeftNav text={<About/>}></LeftNav>
+  <Router history={hashHistory}>
+        <Route path="/" component= {Index} />
+            <Route path="/DesignCases" component={DesignCases}/>
+              <Route path="/DesignCases/DesignCasesAbout" component={DesignCasesAbout}/>
 
-      </div>
-    );
-  }
-}
-
-export default App;
+       <Route path="/Stuff" component={Stuff}/>
+        <Route path="/Cooperation" component={Cooperation}/>
+         <Route path="/About" component={About}/>
+    </Router>
+)

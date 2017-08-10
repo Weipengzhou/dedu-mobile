@@ -1,14 +1,12 @@
 import React from 'react';
 import './About.less';
-import wechat from './gzwy.jpg'
-class About extends React.Component{
-  constructor(props){
-    super(props)
-  }
+import wechat from './gzwy.jpg';
+import LeftNav from '../../components/LeftNav/LeftNav';
+class Index extends React.Component{
 
   render(){
     return(
-      <div className='About'>
+        <div className='About'>
           <div className='center'>
             <span></span>
             <div className="text">
@@ -36,6 +34,13 @@ class About extends React.Component{
               </div>
           </div>
       </div>
+    )
+  }
+}
+class About extends React.Component{
+  render(){
+    return(
+        <LeftNav text={<Index/>}></LeftNav>
     )
   }
 }

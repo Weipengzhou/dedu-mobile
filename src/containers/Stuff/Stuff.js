@@ -6,7 +6,8 @@ import two from './2.png';
 import three from './3.png';
 import four from './4.png';
 import five from './5.png';
-const Stuff=()=>(
+import LeftNav from '../../components/LeftNav/LeftNav';
+const Index=()=>(
   <div className='Stuff'>
       <Header/>
       <div className="bottom">
@@ -29,6 +30,8 @@ const Stuff=()=>(
 
   </div>
 )
-
+const Stuff =()=>(
+  <LeftNav text={<Index/>}></LeftNav>
+)
 
 export default Stuff;
