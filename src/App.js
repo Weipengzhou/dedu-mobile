@@ -6,6 +6,8 @@ import DesignCases from './containers/DesignCases/DesignCases';
 import DesignCasesAbout from './containers/DesignCasesAbout/DesignCasesAbout';
 import Index from './containers/Index/Index';
 import Stuff from './containers/Stuff/Stuff';
+import OnlineOffer from './containers/OnlineOffer/OnlineOffer';
+import OnlineOfferAbout from './containers/OnlineOfferAbout/OnlineOfferAbout';
 export default(
 
   <Router history={hashHistory}>
@@ -15,6 +17,8 @@ export default(
 
        <Route path="/Stuff" component={Stuff}/>
         <Route path="/Cooperation" component={Cooperation}/>
-         <Route path="/About" component={About}/>
+        <Route path="/About" component={About}/>
+          <Route path="/OnlineOffer" component={OnlineOffer}/>
+            <Route path="/OnlineOfferAbout" component={OnlineOfferAbout}/>
     </Router>
 )

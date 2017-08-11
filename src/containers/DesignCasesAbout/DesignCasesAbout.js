@@ -32,7 +32,7 @@ class Index extends React.Component{
 
   }
   render(){
-        console.log(this.state)
+
         if(this.state.data){
           return(
 
@@ -47,7 +47,7 @@ class Index extends React.Component{
                   <h3>服务项目：</h3><p>{JSON.parse(this.state.data.entity.tags)}</p>
               </div>
               <ul>
-                  {this.state.data.displayCaseImages.map(function(result,index){
+                    {this.state.data.displayCaseImages.map(function(result,index){
                       if(result.images.length!==0){
                         return (
                           <li key={index}>
