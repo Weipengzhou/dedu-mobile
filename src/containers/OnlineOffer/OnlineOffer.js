@@ -24,7 +24,7 @@ class Index extends React.Component{
     hashHistory.push({
      pathname: 'OnlineofferAbout',
      query: {
-      id:this.state.data,
+      id:'20150907002A',
      },
     })
       // if(this.state.data == ''){
