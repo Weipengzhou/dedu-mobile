@@ -21,29 +21,33 @@ class Index extends React.Component{
     this.setState({data:e.target.value})
   }
   handleSubmit(){
-    hashHistory.push({
-     pathname: 'OnlineofferAbout',
-     query: {
-      id:'20150907002A',
-     },
-    })
-      // if(this.state.data == ''){
-      //   alert('请输入合同号')
-      // }else{
-      //   var _this =this;
-      //   ajax({
-      //     url: 'http://www.51ddo.com/app_dev.php/api/building/query', //请求地址
-      //     type: "GET", //请求方式
-      //     dataType: "json",
-      //     success: function(response, xml) {
-      //
-      //
-      //       },
-      //     fail: function(status) {
-      //       console.log(status)
-      //     }
-      //   });
-      // }
+
+      if(this.state.data === ''){
+        alert('请输入合同号')
+      }else{
+        var _this =this;
+        ajax({
+          url: "http://51ddo.com/app_dev.php/api/building/query?sku="+_this.state.data+'&', //请求地址
+          type: "GET", //请求方式
+          dataType: "json",
+          success: function(response, xml) {
+                if(JSON.parse(response).data.length===0){
+                  alert('请输入正确的合同号')
+                }else {
+                  hashHistory.push({
+                   pathname: 'OnlineofferAbout',
+                   query: {
+                    id:_this.state.data,
+                   },
+                  })
+                }
+
+            },
+          fail: function(status) {
+            console.log(status)
+          }
+        });
+      }
   }
 
   render(){

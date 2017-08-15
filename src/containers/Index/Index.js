@@ -38,7 +38,7 @@ import {Link} from 'react-router';
               </Link>
             </li>
             <li>
-                <Link to='/'>
+                <Link to='Quotation'>
               <div className='center'>
                 <img src={three} alt='报价'/>
 
