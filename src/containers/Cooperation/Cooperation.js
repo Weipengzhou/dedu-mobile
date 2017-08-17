@@ -58,7 +58,7 @@ class  Index extends React.Component{
   onSubmit() {
 
     var data = {
-      'industry':this.props.title,
+      'industry':this.state.title,
       'name':this.state.name,
       'phone':this.state.phone,
       'remark':this.state.kind,
@@ -76,12 +76,12 @@ class  Index extends React.Component{
       var _this = this;
       ajax({
         type: "POST",
-        url: 'http://www.51ddo.com/api/feedback/designerReservation',
+        url: 'http://www.51ddo.com/api/feedback/cooperation',
         data: data,
         async: true,
         dataType: 'json',
         success: function(data) {
-          if (data.msg === "OK") {
+          if (JSON.parse(data).msg === "OK") {
             alert('提交成功，请等待我们与您联系');
             _this .setState({isModalOpen: false})
 

@@ -2,9 +2,7 @@ import React from 'react';
 import {Router, Route, Link} from 'react-router';
 import {List, DirectoryList} from '../../components/List/List'
 import Header from '../../components/MobileHeader/MobileHeader';
-
 import action from '../../redux/actions';
-
 import {connect} from 'react-redux';
 import './Configuration.less';
 

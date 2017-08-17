@@ -111,7 +111,7 @@ class Index extends React.Component {
       data: obj, //请求参数
       dataType: "json",
       success: function(data) {
-          console.log(JSON.parse(data).data.utl)
+          console.log(data,JSON.parse(data).data.utl)
           window.location= JSON.parse(data).data.url
 
       },

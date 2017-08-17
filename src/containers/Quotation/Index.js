@@ -60,7 +60,6 @@ class Index extends React.Component {
         data:data, //请求参数
         dataType: "json",
         success: function(response, xml) {
-          console.log(JSON.parse(response))
            _this.props.projectId(JSON.parse(response).data.pricingTable.id)
         },
         fail: function(status) {

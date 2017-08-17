@@ -81,7 +81,8 @@ class Header extends React.Component{
         async: true,
         dataType: 'json',
         success: function(data) {
-          if (data.msg === "OK") {
+          console.log(data);
+          if (JSON.parse(data).msg === "OK") {
             alert('预约成功，请等待我们与您联系');
             _this .setState({isModalOpen: false})
 
