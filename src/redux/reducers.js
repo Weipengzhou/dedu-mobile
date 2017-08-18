@@ -2,6 +2,25 @@ const initialState = {
   people:0,
   area:{
     value:0
+  },
+  checkbox_districtId: {
+    districtId: '全部',
+    one: '0'
+  },
+  checkbox_style: {
+    style: '装修风格',
+    two: '0'
+  },
+  checkbox_area: {
+    area: '面积',
+    three: {
+      areamin: '',
+      areamax:0
+    }
+  },
+  checkbox_progress: {
+    progress: '施工进度',
+    four: ''
   }
 }
 
@@ -75,6 +94,22 @@ const reducer = (state = initialState, action) => {
       return Object.assign({}, state, {
         lastPrice:action.text
       });
+    case 'CHECKBOX_DISTRICTID':
+    return Object.assign({}, state, {
+      checkbox_districtId:action.text
+    });
+    case 'CHECKBOX_STYLE':
+    return Object.assign({}, state, {
+      checkbox_style:action.text
+    });
+    case 'CHECKBOX_AREA':
+    return Object.assign({}, state, {
+      checkbox_area:action.text
+    });
+    case 'CHECKBOX_PROGRESS':
+    return Object.assign({}, state, {
+      checkbox_progress:action.text
+    });
 
     default:
       return state;

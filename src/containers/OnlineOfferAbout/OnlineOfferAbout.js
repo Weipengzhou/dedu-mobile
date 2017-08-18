@@ -12,24 +12,24 @@ const Design =(props)=>{
      return(<div className='pic'>
       <h2 className='title'>平面图</h2>
       <div className='img'>
-        <img src={props.AppBuilding.plane_image} alt='gzwy'/>
+        <img src={'http://www.51ddo.com/'+props.AppBuilding.plane_image} alt='gzwy'/>
       </div>
      </div>)
    }else if(props.AppBuilding.plane_image===''){
      return(<div className='pic'>
       <h2 className='title'>平面图</h2>
       <div className='img'>
-        <img src={props.AppBuilding.origin_image} alt='gzwy'/>
+        <img src={'http://www.51ddo.com/'+props.AppBuilding.origin_image} alt='gzwy'/>
       </div>
      </div>)
    }else {
      return(<div className='pic'>
       <h2 className='title'>平面图</h2>
       <div className='img'>
-        <img src={props.AppBuilding.origin_image} alt='gzwy'/>
+        <img src={'http://www.51ddo.com/'+props.AppBuilding.origin_image} alt='gzwy'/>
       </div>
       <div className='img'>
-        <img src={props.AppBuilding.plane_image} alt='gzwy'/>
+        <img src={'http://www.51ddo.com/'+props.AppBuilding.plane_image} alt='gzwy'/>
       </div>
      </div>)
    }
@@ -120,7 +120,7 @@ class Index extends React.Component{
             },
           fail: function(status) {
             // console.log(status)
-            
+
           }
         });
       })

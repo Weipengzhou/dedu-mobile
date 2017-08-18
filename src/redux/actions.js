@@ -82,6 +82,30 @@ let actions = {
       type:'PROJECT_ID',
       text
     }
+  },
+  checkBoxDistrictId:function(text){
+    return{
+      type:'CHECKBOX_DISTRICTID',
+      text
+    }
+  },
+  checkBoxStyle:function(text){
+    return{
+      type:'CHECKBOX_STYLE',
+      text
+    }
+  },
+  checkBoxArea:function(text){
+    return{
+      type:'CHECKBOX_AREA',
+      text
+    }
+  },
+  checkBoxProgress:function(text){
+    return{
+      type:'CHECKBOX_PROGRESS',
+      text
+    }
   }
 
 
