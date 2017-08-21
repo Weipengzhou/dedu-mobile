@@ -6,7 +6,7 @@ class Index  extends React.Component{
     return(
       <div className='Vr'>
 
-        <iframe src='https://yun.kujiale.com/design/3FO4IUL4ED20/show'></iframe>
+        <iframe src='https://yun.kujiale.com/design/3FO4IVVXLP74/show'></iframe>
       </div>
     )
   }
