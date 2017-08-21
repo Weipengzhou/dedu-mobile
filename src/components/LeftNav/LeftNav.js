@@ -5,7 +5,7 @@ import './LeftNav.less';
 class LeftNav extends React.Component {
   state = {
     open:false,
-    mean:[{title:'首页',add:'/'},{title:'精品案例',add:'DesignCases'},{title:'399硬装套餐',add:'Stuff'},{title:'联系我们',add:'About'},{title:'合作渠道',add:'Cooperation'}]
+    mean:[{title:'首页',add:'/'},{title:'精品案例',add:'DesignCases'},{title:'399硬装套餐',add:'Stuff'},{title:'施工案例',add:'OnlineOffer'},{title:'联系我们',add:'About'},{title:'合作渠道',add:'Cooperation'}]
   }
   onOpenChange = (...args) => {
     this.setState({ open: !this.state.open });

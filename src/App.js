@@ -12,6 +12,7 @@ import Adjustment from './containers/Adjustment/Adjustment';
 import Configuration from './containers/Configuration/Configuration';
 import Pricesheet from './containers/Pricesheet/Pricesheet';
 import Quotation from './containers/Quotation/Quotation';
+import Vr from './containers/Vr/Vr';
 
 import {Provider} from 'react-redux';
 import configureStore from './redux/store'
@@ -32,6 +33,7 @@ export default(
             <Route path='/Quotation' component={Quotation}/>
             <Route path='/Configuration' component={Configuration}/>
             <Route path='/Adjustment' component={Adjustment}/>
+            <Route path='/Vr' component={Vr}/>
 
         </Router>
   </Provider>

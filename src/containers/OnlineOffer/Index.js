@@ -13,6 +13,7 @@ class Index extends React.Component{
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.divClick=this.divClick.bind(this);
+    this.onload=this.onload.bind(this);
     this.state={
       list:[{
             title: '地区',
@@ -121,7 +122,8 @@ class Index extends React.Component{
       area:'面积',
       progress:'施工进度',
       three:{'areamin':'0','areamax':'0'},
-
+      page:1,
+      text:'点击加载更多...'
         }
       }
 
@@ -186,14 +188,17 @@ class Index extends React.Component{
 
       var _this=this;
       ajax({
-        url:'http://www.51ddo.com/api/building/list', //请求地址
+        url:'http://www.51ddo.com/api/building/list/'+this.state.page, //请求地址
         type: "GET", //请求方式
         dataType: "json",
         data:json,
         success: function(response, xml) {
           // _this.setState({data:JSON.parse(response).data})
           console.log(JSON.parse(response))
-              _this.setState({data:JSON.parse(response)})
+          if(JSON.parse(response).AppBuilding.length===0){
+            _this.setState({text:'暂无更多'})
+          }else{
+              _this.setState({data:JSON.parse(response),text:'点击加载更多'})}
           },
         fail: function(status) {
           // console.log(status)
@@ -241,7 +246,36 @@ class Index extends React.Component{
       }
     })
   }
+  onload(){
+    console.log(1)
+    var json = {
+      'districtId':this.props.checkbox_districtId.one,
+      'style':this.props.checkbox_style.two,
+      'area[min]':this.props.checkbox_area.three.areamin,
+      'area[max]':this.props.checkbox_area.three.areamax,
+      'progress':this.props.checkbox_progress.four,
+    };
+    var _this=this;
+    ajax({
+      url:'http://www.51ddo.com/api/building/list/'+parseInt(this.state.page), //请求地址
+      type: "GET", //请求方式
+      dataType: "json",
+      data:json,
+      success: function(response, xml) {
+        // _this.setState({data:JSON.parse(response).data})
+        console.log(JSON.parse(response))
+        if(JSON.parse(response).AppBuilding.length===0){
+          _this.setState({text:'暂无更多'})
+        }else{
+              _this.setState({data:{AppBuilding:_this.state.data.AppBuilding.concat(JSON.parse(response).AppBuilding)},page:parseInt(JSON.parse(response).page)+1,text:'点击加载更多'})
+        }
+        },
+      fail: function(status) {
+        // console.log(status)
 
+      }
+    });
+  }
   componentDidMount() {
     var json = {
       'districtId':this.props.checkbox_districtId.one,
@@ -259,7 +293,11 @@ class Index extends React.Component{
       success: function(response, xml) {
         // _this.setState({data:JSON.parse(response).data})
         console.log(JSON.parse(response))
-            _this.setState({data:JSON.parse(response)})
+        if(JSON.parse(response).AppBuilding.length===0){
+          _this.setState({text:'暂无更多'})
+        }else{
+            _this.setState({data:JSON.parse(response),text:'点击加载更多'})
+          }
         },
       fail: function(status) {
         // console.log(status)
@@ -270,6 +308,7 @@ class Index extends React.Component{
 
 
   render(){
+    console.log(this.state)
     const {checkbox_districtId, checkbox_style,checkbox_area,checkbox_progress,checkBoxDistrictId,checkBoxStyle,checkBoxArea,checkBoxProgress} = this.props;
 
       if(this.state.data){
@@ -321,7 +360,7 @@ class Index extends React.Component{
               ))}
 
               </div>
-
+              <p className='onload' onClick={this.onload}>{this.state.text}</p>
               </div>
         )
       }

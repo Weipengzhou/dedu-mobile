@@ -7,9 +7,20 @@ import three from './3.png';
 import four from './4.png';
 import five from './5.png';
 import LeftNav from '../../components/LeftNav/LeftNav';
+import {Link,hashHistory} from 'react-router';
 const Index=()=>(
   <div className='Stuff'>
-      <Header/>
+    <div className='nav'>
+      <div className='center'>
+        <span></span>
+        <div className="text">
+          <h2>公装无忧</h2>
+          <p>399硬装套餐全景案例</p>
+        </div>
+        <span></span>
+        <button><Link to='/Vr'>点击查看VR全景效果</Link></button>
+      </div>
+    </div>
       <div className="bottom">
             <div className='center'>
               <span></span>
