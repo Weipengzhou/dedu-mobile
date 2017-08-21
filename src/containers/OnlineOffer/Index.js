@@ -216,7 +216,7 @@ class Index extends React.Component{
     } else {
       var _this = this;
       ajax({
-        url: "http://51ddo.com/app_dev.php/api/building/query?sku=" + _this.state.sku + '&', //请求地址
+        url: "http://51ddo.com/api/building/query?sku=" + _this.state.sku + '&', //请求地址
         type: "GET", //请求方式
         dataType: "json",
         success: function(response, xml) {

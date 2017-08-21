@@ -31,7 +31,7 @@ class Index extends React.Component{
   componentDidMount(){
     var _this =this;
     ajax({
-      url: " http://51ddo.com/app_dev.php/api/displayCases/", //请求地址
+      url: " http://51ddo.com/api/displayCases/", //请求地址
       type: "GET", //请求方式
       dataType: "json",
       success: function(response, xml) {

@@ -106,7 +106,7 @@ class Index extends React.Component{
     hashHistory.listen(location => {
         //获取传递的数据，对象、值....
         console.log(location.query.id)
-        var ur ="http://51ddo.com/app_dev.php/api/building/query?sku="+location.query.id+'&';
+        var ur ="http://51ddo.com/api/building/query?sku="+location.query.id+'&';
 
         var _this =this;
         ajax({

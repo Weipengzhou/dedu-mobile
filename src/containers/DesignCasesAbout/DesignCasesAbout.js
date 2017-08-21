@@ -17,7 +17,7 @@ class Index extends React.Component{
         //获取传递的数据，对象、值....
         var _this =this;
         ajax({
-          url: " http://51ddo.com/app_dev.php/api/displayCases/view/"+location.query.id, //请求地址
+          url: " http://51ddo.com/api/displayCases/view/"+location.query.id, //请求地址
           type: "GET", //请求方式
           dataType: "json",
           success: function(response, xml) {
