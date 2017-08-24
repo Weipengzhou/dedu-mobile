@@ -320,7 +320,7 @@ class Index extends React.Component{
                 <div className="text">
                   <h2>
                     <b>施工</b>列表</h2>
-                  <p>ConstructionList</p>
+                  <p>Construction</p>
                 </div>
                 <span></span>
 
