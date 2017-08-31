@@ -188,7 +188,7 @@ class Index extends React.Component{
 
       var _this=this;
       ajax({
-        url:'http://www.51ddo.com/api/building/list/'+this.state.page, //请求地址
+        url:'https://www.51ddo.com/api/building/list/'+this.state.page, //请求地址
         type: "GET", //请求方式
         dataType: "json",
         data:json,
@@ -216,7 +216,7 @@ class Index extends React.Component{
     } else {
       var _this = this;
       ajax({
-        url: "http://51ddo.com/api/building/query?sku=" + _this.state.sku + '&', //请求地址
+        url: "https://51ddo.com/api/building/query?sku=" + _this.state.sku + '&', //请求地址
         type: "GET", //请求方式
         dataType: "json",
         success: function(response, xml) {
@@ -257,7 +257,7 @@ class Index extends React.Component{
     };
     var _this=this;
     ajax({
-      url:'http://www.51ddo.com/api/building/list/'+parseInt(this.state.page), //请求地址
+      url:'https://www.51ddo.com/api/building/list/'+parseInt(this.state.page), //请求地址
       type: "GET", //请求方式
       dataType: "json",
       data:json,
@@ -286,7 +286,7 @@ class Index extends React.Component{
     };
     var _this=this;
     ajax({
-      url:'http://www.51ddo.com/api/building/list', //请求地址
+      url:'https://www.51ddo.com/api/building/list', //请求地址
       type: "GET", //请求方式
       dataType: "json",
       data:json,

@@ -55,7 +55,7 @@ class Index extends React.Component {
     var _this=this;
     if(this.props.code == this.props.token.code){
       ajax({
-        url: "http://www.51ddo.com/api/pricing-table/sms/verify", //请求地址
+        url: "https://www.51ddo.com/api/pricing-table/sms/verify", //请求地址
         type: "POST", //请求方式
         data:data, //请求参数
         dataType: "json",

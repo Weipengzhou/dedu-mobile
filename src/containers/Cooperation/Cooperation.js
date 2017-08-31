@@ -76,7 +76,7 @@ class  Index extends React.Component{
       var _this = this;
       ajax({
         type: "POST",
-        url: 'http://www.51ddo.com/api/feedback/cooperation',
+        url: 'https://www.51ddo.com/api/feedback/cooperation',
         data: data,
         async: true,
         dataType: 'json',

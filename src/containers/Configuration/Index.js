@@ -20,7 +20,7 @@ class Index extends React.Component {
           value:0,
           number: 0,
           id: 0,
-          src:"http://www.51ddo.com/assets/img/1.png",
+          src:"https://www.51ddo.com/assets/img/1.png",
           class: 'one',
           type: 'Gmanager'
         }, {
@@ -28,14 +28,14 @@ class Index extends React.Component {
           value:0,
           number: 0,
           id: 1,
-          src:"http://www.51ddo.com/assets/img/2.png",
+          src:"https://www.51ddo.com/assets/img/2.png",
           class: 'two',
           type: 'manager'
         }, {
           name: '部门办公室',
           number: 0,
           id: 2,
-          src:"http://www.51ddo.com/assets/img/3.png",
+          src:"https://www.51ddo.com/assets/img/3.png",
           class: 'three',
           type: 'department'
         }, {
@@ -43,7 +43,7 @@ class Index extends React.Component {
           value:0,
           number: 0,
           id: 3,
-          src:"http://www.51ddo.com/assets/img/4.png",
+          src:"https://www.51ddo.com/assets/img/4.png",
           class: 'four',
           type: 'reception'
         }, {
@@ -51,7 +51,7 @@ class Index extends React.Component {
           value:0,
           number: 0,
           id: 4,
-          src:"http://www.51ddo.com/assets/img/5.png",
+          src:"https://www.51ddo.com/assets/img/5.png",
           class: 'five',
           type: 'coffee'
         }, {
@@ -59,7 +59,7 @@ class Index extends React.Component {
           value:0,
           number: 0,
           id: 5,
-          src:"http://www.51ddo.com/assets/img/6.png",
+          src:"https://www.51ddo.com/assets/img/6.png",
           class: 'six',
           type: 'office'
         }, {
@@ -67,7 +67,7 @@ class Index extends React.Component {
           value:0,
           number: 0,
           id: 6,
-          src:"http://www.51ddo.com/assets/img/7.png",
+          src:"https://www.51ddo.com/assets/img/7.png",
           class: 'seven',
           type: 'storage'
         }, {
@@ -75,7 +75,7 @@ class Index extends React.Component {
           value:0,
           number: 0,
           id: 7,
-          src:"http://www.51ddo.com/assets/img/8.png",
+          src:"https://www.51ddo.com/assets/img/8.png",
           class: 'eight',
           type: 'meeting'
         },
@@ -84,7 +84,7 @@ class Index extends React.Component {
           value:0,
           number: 0,
           id: 8,
-          src:"http://www.51ddo.com/assets/img/9.png",
+          src:"https://www.51ddo.com/assets/img/9.png",
           class: 'ten',
           type: 'custom'
         },
@@ -93,7 +93,7 @@ class Index extends React.Component {
           value:0,
           number: 0,
           id: 9,
-          src:"http://www.51ddo.com/assets/img/10.png",
+          src:"https://www.51ddo.com/assets/img/10.png",
           class: 'nine',
           type: 'open'
         }
@@ -110,7 +110,7 @@ class Index extends React.Component {
             value:9,
             number: 0,
             id: 0,
-            src:"http://apps.51ddo.com/assets/img/1.png",
+            src:"https://apps.51ddo.com/assets/img/1.png",
             class: 'one',
             type: 'Gmanager'
           }, {
@@ -118,7 +118,7 @@ class Index extends React.Component {
             value:12,
             number: 0,
             id: 7,
-            src:"http://www.51ddo.com/assets/img/8.png",
+            src:"https://www.51ddo.com/assets/img/8.png",
             class: 'eight',
             type: 'meeting'
           }, {
@@ -126,7 +126,7 @@ class Index extends React.Component {
             value:1,
             number: 0,
             id: 9,
-            src:"http://www.51ddo.com/assets/img/10.png",
+            src:"https://www.51ddo.com/assets/img/10.png",
             class: 'nine',
             type: 'open'
           }
@@ -140,7 +140,7 @@ class Index extends React.Component {
             value:16,
             number: 0,
             id: 0,
-            src:"http://www.51ddo.com/assets/img/1.png",
+            src:"https://www.51ddo.com/assets/img/1.png",
             class: 'one',
             type: 'Gmanager'
           }, {
@@ -148,7 +148,7 @@ class Index extends React.Component {
             value:12,
             number: 0,
             id: 1,
-            src:"http://www.51ddo.com/assets/img/2.png",
+            src:"https://www.51ddo.com/assets/img/2.png",
             class: 'two',
             type: 'manager'
           },
@@ -157,7 +157,7 @@ class Index extends React.Component {
             value:12,
             number: 0,
             id: 7,
-            src:"http://www.51ddo.com/assets/img/8.png",
+            src:"https://www.51ddo.com/assets/img/8.png",
             class: 'eight',
             type: 'meeting'
           }, {
@@ -165,7 +165,7 @@ class Index extends React.Component {
             value:1,
             number: 0,
             id: 9,
-            src:"http://www.51ddo.com/assets/img/10.png",
+            src:"https://www.51ddo.com/assets/img/10.png",
             class: 'nine',
             type: 'open'
           }
@@ -179,7 +179,7 @@ class Index extends React.Component {
             value:20,
             number: 0,
             id: 0,
-            src:"http://www.51ddo.com/assets/img/1.png",
+            src:"https://www.51ddo.com/assets/img/1.png",
             class: 'one',
             type: 'Gmanager'
           }, {
@@ -187,7 +187,7 @@ class Index extends React.Component {
             value:12,
             number: 0,
             id: 1,
-            src:"http://www.51ddo.com/assets/img/2.png",
+            src:"https://www.51ddo.com/assets/img/2.png",
             class: 'two',
             type: 'manager'
           },
@@ -196,7 +196,7 @@ class Index extends React.Component {
             value:12,
             number: 0,
             id: 2,
-            src:"http://www.51ddo.com/assets/img/3.png",
+            src:"https://www.51ddo.com/assets/img/3.png",
             class: 'three',
             type: 'department'
           },
@@ -205,7 +205,7 @@ class Index extends React.Component {
             value:16,
             number: 0,
             id: 7,
-            src:"http://www.51ddo.com/assets/img/8.png",
+            src:"https://www.51ddo.com/assets/img/8.png",
             class: 'eight',
             type: 'meeting'
           }, {
@@ -213,7 +213,7 @@ class Index extends React.Component {
             value:1,
             number: 0,
             id: 9,
-            src:"http://www.51ddo.com/assets/img/9.png",
+            src:"https://www.51ddo.com/assets/img/9.png",
             class: 'nine',
             type: 'open'
           }
@@ -228,7 +228,7 @@ class Index extends React.Component {
             value:20,
             number: 0,
             id: 0,
-            src:"http://www.51ddo.com/assets/img/1.png",
+            src:"https://www.51ddo.com/assets/img/1.png",
             class: 'one',
             type: 'Gmanager'
           }, {
@@ -236,7 +236,7 @@ class Index extends React.Component {
             value:16,
             number: 0,
             id: 1,
-            src:"http://www.51ddo.com/assets/img/2.png",
+            src:"https://www.51ddo.com/assets/img/2.png",
             class: 'two',
             type: 'manager'
           },
@@ -245,7 +245,7 @@ class Index extends React.Component {
             value:8,
             number: 0,
             id: 2,
-            src:"http://www.51ddo.com/assets/img/3.png",
+            src:"https://www.51ddo.com/assets/img/3.png",
             class: 'three',
             type: 'department'
           },
@@ -254,7 +254,7 @@ class Index extends React.Component {
             value:8,
             number: 0,
             id: 2,
-            src:"http://www.51ddo.com/assets/img/3.png",
+            src:"https://www.51ddo.com/assets/img/3.png",
             class: 'three',
             type: 'department'
           },
@@ -263,7 +263,7 @@ class Index extends React.Component {
             value:12,
             number: 0,
             id: 7,
-            src:"http://www.51ddo.com/assets/img/8.png",
+            src:"https://www.51ddo.com/assets/img/8.png",
             class: 'eight',
             type: 'meeting'
           },
@@ -272,7 +272,7 @@ class Index extends React.Component {
             value:18,
             number: 0,
             id: 7,
-            src:"http://www.51ddo.com/assets/img/8.png",
+            src:"https://www.51ddo.com/assets/img/8.png",
             class: 'eight',
             type: 'meeting'
           },
@@ -281,7 +281,7 @@ class Index extends React.Component {
             value:1,
             number: 0,
             id: 9,
-           src:"http://www.51ddo.com/assets/img/9.png",
+           src:"https://www.51ddo.com/assets/img/9.png",
             class: 'nine',
             type: 'open'
           }
@@ -295,7 +295,7 @@ class Index extends React.Component {
             value:20,
             number: 0,
             id: 0,
-          src:"http://www.51ddo.com/assets/img/1.png",
+          src:"https://www.51ddo.com/assets/img/1.png",
             class: 'one',
             type: 'Gmanager'
           }, {
@@ -303,7 +303,7 @@ class Index extends React.Component {
             value:16,
             number: 0,
             id: 1,
-          src:"http://www.51ddo.com/assets/img/2.png",
+          src:"https://www.51ddo.com/assets/img/2.png",
             class: 'two',
             type: 'manager'
           },
@@ -312,7 +312,7 @@ class Index extends React.Component {
             value:16,
             number: 0,
             id: 1,
-            src:"http://www.51ddo.com/assets/img/2.png",
+            src:"https://www.51ddo.com/assets/img/2.png",
             class: 'two',
             type: 'manager'
           },
@@ -321,7 +321,7 @@ class Index extends React.Component {
             value:10,
             number: 0,
             id: 2,
-          src:"http://www.51ddo.com/assets/img/3.png",
+          src:"https://www.51ddo.com/assets/img/3.png",
             class: 'three',
             type: 'department'
           },
@@ -330,7 +330,7 @@ class Index extends React.Component {
             value:10,
             number: 0,
             id: 2,
-            src:"http://www.51ddo.com/assets/img/3.png",
+            src:"https://www.51ddo.com/assets/img/3.png",
             class: 'three',
             type: 'department'
           },
@@ -339,7 +339,7 @@ class Index extends React.Component {
             value:5,
             number: 0,
             id: 6,
-            src:"http://www.51ddo.com/assets/img/7.png",
+            src:"https://www.51ddo.com/assets/img/7.png",
             class: 'seven',
             type: 'storage'
           },
@@ -348,7 +348,7 @@ class Index extends React.Component {
             value:28,
             number: 0,
             id: 7,
-            src:"http://www.51ddo.com/assets/img/8.png",
+            src:"https://www.51ddo.com/assets/img/8.png",
             class: 'eight',
             type: 'meeting'
           },
@@ -357,7 +357,7 @@ class Index extends React.Component {
             value:15,
             number: 0,
             id: 7,
-            src:"http://www.51ddo.com/assets/img/8.png",
+            src:"https://www.51ddo.com/assets/img/8.png",
             class: 'eight',
             type: 'meeting'
           },
@@ -366,7 +366,7 @@ class Index extends React.Component {
             value:1,
             number: 0,
             id: 9,
-           src:"http://www.51ddo.com/assets/img/10.png",
+           src:"https://www.51ddo.com/assets/img/10.png",
             class: 'nine',
             type: 'open'
           }
@@ -381,7 +381,7 @@ class Index extends React.Component {
             value:24,
             number: 0,
             id: 0,
-          src:"http://www.51ddo.com/assets/img/1.png",
+          src:"https://www.51ddo.com/assets/img/1.png",
             class: 'one',
             type: 'Gmanager'
           }, {
@@ -389,7 +389,7 @@ class Index extends React.Component {
             value:16,
             number: 0,
             id: 1,
-          src:"http://www.51ddo.com/assets/img/2.png",
+          src:"https://www.51ddo.com/assets/img/2.png",
             class: 'two',
             type: 'manager'
           },
@@ -398,7 +398,7 @@ class Index extends React.Component {
             value:16,
             number: 0,
             id: 1,
-            src:"http://www.51ddo.com/assets/img/2.png",
+            src:"https://www.51ddo.com/assets/img/2.png",
             class: 'two',
             type: 'manager'
           },
@@ -407,7 +407,7 @@ class Index extends React.Component {
             value:16,
             number: 0,
             id: 1,
-            src:"http://www.51ddo.com/assets/img/2.png",
+            src:"https://www.51ddo.com/assets/img/2.png",
             class: 'two',
             type: 'manager'
           },
@@ -416,7 +416,7 @@ class Index extends React.Component {
             value:12,
             number: 0,
             id: 2,
-            src:"http://www.51ddo.com/assets/img/3.png",
+            src:"https://www.51ddo.com/assets/img/3.png",
             class: 'three',
             type: 'department'
           },
@@ -425,7 +425,7 @@ class Index extends React.Component {
             value:12,
             number: 0,
             id: 2,
-          src:"http://www.51ddo.com/assets/img/3.png",
+          src:"https://www.51ddo.com/assets/img/3.png",
             class: 'three',
             type: 'department'
           },
@@ -434,7 +434,7 @@ class Index extends React.Component {
             value:8,
             number: 0,
             id: 2,
-          src:"http://www.51ddo.com/assets/img/3.png",
+          src:"https://www.51ddo.com/assets/img/3.png",
             class: 'three',
             type: 'department'
           },
@@ -443,7 +443,7 @@ class Index extends React.Component {
             value:8,
             number: 0,
             id: 6,
-            src:"http://www.51ddo.com/assets/img/7.png",
+            src:"https://www.51ddo.com/assets/img/7.png",
             class: 'seven',
             type: 'storage'
           },
@@ -452,7 +452,7 @@ class Index extends React.Component {
             value:9,
             number: 0,
             id: 7,
-            src:"http://www.51ddo.com/assets/img/8.png",
+            src:"https://www.51ddo.com/assets/img/8.png",
             class: 'eight',
             type: 'meeting'
           },
@@ -461,7 +461,7 @@ class Index extends React.Component {
             value:20,
             number: 0,
             id: 7,
-            src:"http://www.51ddo.com/assets/img/8.png",
+            src:"https://www.51ddo.com/assets/img/8.png",
             class: 'eight',
             type: 'meeting'
           },
@@ -470,7 +470,7 @@ class Index extends React.Component {
             value:0,
             number: 0,
             id: 9,
-            src:"http://www.51ddo.com/assets/img/10.png",
+            src:"https://www.51ddo.com/assets/img/10.png",
             class: 'nine',
             type: 'open'
           }
@@ -485,7 +485,7 @@ class Index extends React.Component {
             value:24,
             number: 0,
             id: 0,
-            src:"http://www.51ddo.com/assets/img/1.png",
+            src:"https://www.51ddo.com/assets/img/1.png",
             class: 'one',
             type: 'Gmanager'
           }, {
@@ -493,7 +493,7 @@ class Index extends React.Component {
             value:12,
             number: 0,
             id: 1,
-            src:"http://www.51ddo.com/assets/img/2.png",
+            src:"https://www.51ddo.com/assets/img/2.png",
             class: 'two',
             type: 'manager'
           },
@@ -502,7 +502,7 @@ class Index extends React.Component {
             value:16,
             number: 0,
             id: 1,
-            src:"http://www.51ddo.com/assets/img/2.png",
+            src:"https://www.51ddo.com/assets/img/2.png",
             class: 'two',
             type: 'manager'
           },
@@ -511,7 +511,7 @@ class Index extends React.Component {
             value:16,
             number: 0,
             id: 1,
-            src:"http://www.51ddo.com/assets/img/2.png",
+            src:"https://www.51ddo.com/assets/img/2.png",
             class: 'two',
             type: 'manager'
           },
@@ -521,7 +521,7 @@ class Index extends React.Component {
 
             number: 0,
             id: 2,
-          src:"http://www.51ddo.com/assets/img/3.png",
+          src:"https://www.51ddo.com/assets/img/3.png",
             class: 'three',
             type: 'department'
           },
@@ -531,7 +531,7 @@ class Index extends React.Component {
 
             number: 0,
             id: 2,
-          src:"http://www.51ddo.com/assets/img/3.png",
+          src:"https://www.51ddo.com/assets/img/3.png",
             class: 'three',
             type: 'department'
           },
@@ -541,7 +541,7 @@ class Index extends React.Component {
 
             number: 0,
             id: 2,
-            src:"http://www.51ddo.com/assets/img/3.png",
+            src:"https://www.51ddo.com/assets/img/3.png",
             class: 'three',
             type: 'department'
           },
@@ -550,7 +550,7 @@ class Index extends React.Component {
             value:12,
             number: 0,
             id: 4,
-            src:"http://www.51ddo.com/assets/img/5.png",
+            src:"https://www.51ddo.com/assets/img/5.png",
             class: 'five',
             type: 'coffee'
           },
@@ -559,7 +559,7 @@ class Index extends React.Component {
             value:8,
             number: 0,
             id: 6,
-          src:"http://www.51ddo.com/assets/img/7.png",
+          src:"https://www.51ddo.com/assets/img/7.png",
             class: 'seven',
             type: 'storage'
           },
@@ -569,7 +569,7 @@ class Index extends React.Component {
 
             number: 0,
             id: 7,
-            src:"http://www.51ddo.com/assets/img/8.png",
+            src:"https://www.51ddo.com/assets/img/8.png",
             class: 'eight',
             type: 'meeting'
           },
@@ -578,7 +578,7 @@ class Index extends React.Component {
             value:12,
             number: 0,
             id: 7,
-            src:"http://www.51ddo.com/assets/img/8.png",
+            src:"https://www.51ddo.com/assets/img/8.png",
             class: 'eight',
             type: 'meeting'
           },
@@ -587,7 +587,7 @@ class Index extends React.Component {
             value:20,
             number: 0,
             id: 7,
-          src:"http://www.51ddo.com/assets/img/8.png",
+          src:"https://www.51ddo.com/assets/img/8.png",
             class: 'eight',
             type: 'meeting'
           },
@@ -596,7 +596,7 @@ class Index extends React.Component {
             value:0,
             number: 0,
             id: 9,
-            src:"http://www.51ddo.com/assets/img/10.png",
+            src:"https://www.51ddo.com/assets/img/10.png",
             class: 'nine',
             type: 'open'
           }

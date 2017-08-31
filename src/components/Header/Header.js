@@ -76,7 +76,7 @@ class Header extends React.Component{
       var _this = this;
       ajax({
         type: "POST",
-        url: 'http://www.51ddo.com/api/feedback/designerReservation',
+        url: 'https://www.51ddo.com/api/feedback/designerReservation',
         data: data,
         async: true,
         dataType: 'json',

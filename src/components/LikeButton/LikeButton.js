@@ -47,7 +47,7 @@ class LikeButton extends React.Component {
           var data = {phone:this.props.phone}
 
           ajax({
-            url: "http://www.51ddo.com/api/pricing-table/sms", //请求地址
+            url: "https://www.51ddo.com/api/pricing-table/sms", //请求地址
             type: "POST", //请求方式
             data: data, //请求参数
             dataType: "json",

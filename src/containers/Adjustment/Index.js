@@ -19,7 +19,7 @@ class Index extends React.Component {
     let abc = this.props.area; //初始面积
     var _this = this;
     ajax({
-      url: "http://www.51ddo.com/api/price", //请求地址
+      url: "https://www.51ddo.com/api/price", //请求地址
       type: "GET", //请求方式
       data: {
         area: abc
@@ -89,7 +89,7 @@ class Index extends React.Component {
   }
 
   onClick(){
-      const save = 'http://www.51ddo.com/api/pricing-table/extraData'
+      const save = 'https://www.51ddo.com/api/pricing-table/extraData'
       var _this = this;
       var  obj =
         {extraData:

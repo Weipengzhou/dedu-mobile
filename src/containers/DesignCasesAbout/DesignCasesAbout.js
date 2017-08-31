@@ -17,7 +17,7 @@ class Index extends React.Component{
         //获取传递的数据，对象、值....
         var _this =this;
         ajax({
-          url: " http://51ddo.com/api/displayCases/view/"+location.query.id, //请求地址
+          url: " https://51ddo.com/api/displayCases/view/"+location.query.id, //请求地址
           type: "GET", //请求方式
           dataType: "json",
           success: function(response, xml) {
@@ -38,7 +38,7 @@ class Index extends React.Component{
 
             <div className='DesignCasesAbout'>
               <div className='left'>
-                <img src={'http://www.51ddo.com/'+this.state.data.designerEntity.image} alt='gzwy'/>
+                <img src={'https://www.51ddo.com/'+this.state.data.designerEntity.image} alt='gzwy'/>
               </div>
               <div className='right'>
                   <h2>设计师:{this.state.data.designerEntity.username}</h2>
@@ -53,7 +53,7 @@ class Index extends React.Component{
                           <li key={index}>
                                 <h2>{result.name}</h2>
                                 {result.images.map((a,b)=>(
-                                  <div className='img' key={b}><img src={'http://www.51ddo.com/'+a.image} alt="gzwy"/></div>
+                                  <div className='img' key={b}><img src={'https://www.51ddo.com/'+a.image} alt="gzwy"/></div>
                                 ))}
                           </li>
                         )

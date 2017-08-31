@@ -9,7 +9,7 @@ const Cases=(props)=>(
     { props.list.map((result,index)=>(
       <li key={index} onClick={()=>props.handleClick({id:result.id})}>
 
-              <img src={'http://www.51ddo.com/'+result.image} alt="gzwy"/>
+              <img src={'https://www.51ddo.com/'+result.image} alt="gzwy"/>
               <p>{result.name}</p>
               <div className='icon'>
                 <span className='mianji'></span><i>{result.area}㎡</i>
@@ -31,7 +31,7 @@ class Index extends React.Component{
   componentDidMount(){
     var _this =this;
     ajax({
-      url: " http://51ddo.com/api/displayCases/", //请求地址
+      url: " https://51ddo.com/api/displayCases/", //请求地址
       type: "GET", //请求方式
       dataType: "json",
       success: function(response, xml) {

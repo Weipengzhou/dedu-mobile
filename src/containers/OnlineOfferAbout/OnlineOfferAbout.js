@@ -12,24 +12,24 @@ const Design =(props)=>{
      return(<div className='pic'>
       <h2 className='title'>平面图</h2>
       <div className='img'>
-        <img src={'http://www.51ddo.com/'+props.AppBuilding.plane_image} alt='gzwy'/>
+        <img src={'https://www.51ddo.com/'+props.AppBuilding.plane_image} alt='gzwy'/>
       </div>
      </div>)
    }else if(props.AppBuilding.plane_image===''){
      return(<div className='pic'>
       <h2 className='title'>平面图</h2>
       <div className='img'>
-        <img src={'http://www.51ddo.com/'+props.AppBuilding.origin_image} alt='gzwy'/>
+        <img src={'https://www.51ddo.com/'+props.AppBuilding.origin_image} alt='gzwy'/>
       </div>
      </div>)
    }else {
      return(<div className='pic'>
       <h2 className='title'>平面图</h2>
       <div className='img'>
-        <img src={'http://www.51ddo.com/'+props.AppBuilding.origin_image} alt='gzwy'/>
+        <img src={'https://www.51ddo.com/'+props.AppBuilding.origin_image} alt='gzwy'/>
       </div>
       <div className='img'>
-        <img src={'http://www.51ddo.com/'+props.AppBuilding.plane_image} alt='gzwy'/>
+        <img src={'https://www.51ddo.com/'+props.AppBuilding.plane_image} alt='gzwy'/>
       </div>
      </div>)
    }
@@ -87,7 +87,7 @@ const Massage=(props)=>(
           </div>
             {JSON.parse(result.image).map((result,index)=>(
               <div className='img' key={index}>
-                  <img src={'http://www.51ddo.com/'+result} alt='gzwy '/>
+                  <img src={'https://www.51ddo.com/'+result} alt='gzwy '/>
               </div>
             ))}
       </li>
@@ -106,7 +106,7 @@ class Index extends React.Component{
     hashHistory.listen(location => {
         //获取传递的数据，对象、值....
         console.log(location.query.id)
-        var ur ="http://51ddo.com/api/building/query?sku="+location.query.id+'&';
+        var ur ="https://51ddo.com/api/building/query?sku="+location.query.id+'&';
 
         var _this =this;
         ajax({
@@ -131,7 +131,7 @@ class Index extends React.Component{
       return(
         <div className="OnlineOfferAbout">
             <div className='top'>
-              <img src={"http://www.51ddo.com/"+this.state.data.AppBuilding.background_image} alt='背景图' className='img'/>
+              <img src={"https://www.51ddo.com/"+this.state.data.AppBuilding.background_image} alt='背景图' className='img'/>
                 <div className='top-c'>
                     <h2>{this.state.data.AppBuilding.address}</h2>
                     <Jindu AppBuildingProgress={this.state.data.AppBuildingProgress}/>
