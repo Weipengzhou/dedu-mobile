@@ -129,8 +129,8 @@ function mapDispatchToProps(dispatch) {
     handleClickTwo: (event) => dispatch(action.buttonClickTwo(event)),
     afterhandleChange:(event) => dispatch(action.afterArea(event)),
       lastArea: (event) => dispatch(action.lastArea(event)),
+
       
-        projectId:(event)=>dispatch(action.projectId(event)),
   }
 }
 

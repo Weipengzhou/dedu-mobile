@@ -109,7 +109,36 @@ class Index extends React.Component {
         data:data, //请求参数
         dataType: "json",
         success: function(response, xml) {
-           _this.props.projectId(JSON.parse(response).data.pricingTable.id)
+
+           const save = 'https://www.51ddo.com/api/pricing-table/extraData'
+           var  obj =
+             {extraData:
+                JSON.stringify({
+                  people:_this.props.data.people,
+                  area:_this.props.data.area.value,
+                  afterarea:_this.props.data.afterarea.value,
+                  lastArea:_this.props.data.lastArea.value,
+                  select:_this.props.data.select,
+                  lastPrice:_this.props.data.lastPrice,
+                }),
+                phone:_this.props.phone,
+                id:JSON.parse(response).data.pricingTable.id,
+              };
+
+         ajax({
+           url: save, //请求地址
+           type: "POST", //请求方式
+           data: obj, //请求参数
+           dataType: "json",
+           success: function(data) {
+               console.log(data,JSON.parse(data).data.utl)
+               window.location= JSON.parse(data).data.url
+
+           },
+           fail: function(status){
+             console.log(status)
+           }
+         })
         },
         fail: function(status) {
           console.log(status)
@@ -119,47 +148,18 @@ class Index extends React.Component {
       alert('请输入正确的验证码')
       return false;
     }
-      const save = 'https://www.51ddo.com/api/pricing-table/extraData'
-      var _this = this;
-      var  obj =
-        {extraData:
-           JSON.stringify({
-             people:_this.props.data.people,
-             area:_this.props.data.area.value,
-             afterarea:_this.props.data.afterarea.value,
-             lastArea:_this.props.data.lastArea.value,
-             select:_this.props.data.select,
-             lastPrice:_this.props.data.lastPrice,
-           }),
-           phone:this.props.phone,
-           id:this.props.id,
-         };
 
-    ajax({
-      url: save, //请求地址
-      type: "POST", //请求方式
-      data: obj, //请求参数
-      dataType: "json",
-      success: function(data) {
-          console.log(data,JSON.parse(data).data.utl)
-          window.location= JSON.parse(data).data.url
-
-      },
-      fail: function(status){
-        console.log(status)
-      }
-    })
 
       // Price(this.props)
       // this.props.select[this.props.select.length-1].value = this.props.afterarea;
   }
 
   onBlur(e){
-    // console.log(e)
+  this.props.phoneNumber(e)
   }
 
   render() {
-    const {select, onBande, afterarea, area, lastArea,todos1,todos2,data,phone,id,    phoneNumber,token} = this.props;
+    const {select, onBande, afterarea, area, lastArea,todos1,todos2,data,phone,id,phoneNumber,token,projectId} = this.props;
     return (
       <div className='Adjustment'>
         <div className='header-top'>
@@ -177,7 +177,7 @@ class Index extends React.Component {
               <span className="icon-3"></span>
               <p>手机号:</p>
                   </label>
-                <input type="number" onChange={phoneNumber}></input>
+                <input type="number" onChange={this.onBlur.bind(this)}></input>
                 <b></b>
           </div>
           <div className='inp like'>
@@ -204,6 +204,7 @@ function mapDispatchToProps(dispatch) {
     feachPrice: (event) => dispatch(action.feachPrice(event)),
     officeSelect:(event)=>dispatch(action.officeSelect(event)),
       phoneNumber:(event)=>dispatch(action.phoneNumber(event.target.value)),
+        projectId:(event)=>dispatch(action.projectId(event)),
   }
 }
 
