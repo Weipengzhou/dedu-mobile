@@ -28,9 +28,10 @@ class LikeButton extends React.Component {
         return false
       }
         if(this.state.liked){
+              this.state.liked = false;
           this.timer = setInterval(function () {
             var count = this.state.count;
-            this.state.liked = false;
+
             count -= 1;
             if (count < 1) {
               this.setState({

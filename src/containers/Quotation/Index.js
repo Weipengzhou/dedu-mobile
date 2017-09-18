@@ -1,6 +1,6 @@
 import React from 'react';
 import {Router, Route,Link,hashHistory} from 'react-router';
-import LikeButton from '../../components/LikeButton/LikeButton';
+
 import HeaderBg from './HeaderBg.png';
 import HeaderBackground from '../../components/HeaderBackground/HeaderBackground'
 import Logo from './logo.png';
@@ -39,37 +39,10 @@ class Index extends React.Component {
     } else {
       abc = Math.round(this.props.area.value * 0.75);
     }
-    if(typeof(this.props.phone)=='undefined'){
-      alert('请输入手机号')
-      return false
-    }else if(typeof(this.props.code)=='undefined'){
-      alert('请输入验证码')
-      return false
-    }else if(typeof(this.props.token)=='undefined'){
-      alert('请获取验证码后输入')
-      return false
-    }
+
     this.props.afterhandleChange(abc)
     this.props.lastArea(abc);
-    var data={token:this.props.token.token,phone:this.props.phone,code:this.props.code};
-    var _this=this;
-    if(this.props.code == this.props.token.code){
-      ajax({
-        url: "https://www.51ddo.com/api/pricing-table/sms/verify", //请求地址
-        type: "POST", //请求方式
-        data:data, //请求参数
-        dataType: "json",
-        success: function(response, xml) {
-           _this.props.projectId(JSON.parse(response).data.pricingTable.id)
-        },
-        fail: function(status) {
-          console.log(status)
-        }
-      });
-    }else {
-      alert('请输入正确的验证码')
-      return false;
-    }
+
     if(!this.props.area.value){
       alert('请输入您的建筑面积！')
       return false
@@ -93,7 +66,6 @@ class Index extends React.Component {
       people,
       areahandleChange,
       peoplehandleChange,
-      phoneNumber,
       handleClickOne,
       handleClickTwo,
       list,
@@ -126,17 +98,7 @@ class Index extends React.Component {
           <input type="number" onChange={peoplehandleChange}></input>
           <b></b>
         </div>
-        <div className='inp'>
-          <label>
-            <span className="icon-3"></span>
-            <p>手机号:</p>
-                </label>
-              <input type="number" onChange={phoneNumber}></input>
-              <b></b>
-        </div>
-        <div className='inp like'>
-           <LikeButton/>
-        </div>
+
         <p className="checkedtitle">根据实际情况点选（可不选）</p>
         <div className="ban">
           <Button text='不装修顶面' checked={this.props.todos1} leClick={handleClickOne} className={this.props.todos1
@@ -167,7 +129,7 @@ function mapDispatchToProps(dispatch) {
     handleClickTwo: (event) => dispatch(action.buttonClickTwo(event)),
     afterhandleChange:(event) => dispatch(action.afterArea(event)),
       lastArea: (event) => dispatch(action.lastArea(event)),
-        phoneNumber:(event)=>dispatch(action.phoneNumber(event.target.value)),
+      
         projectId:(event)=>dispatch(action.projectId(event)),
   }
 }
