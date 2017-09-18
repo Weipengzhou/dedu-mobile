@@ -155,7 +155,7 @@ class Index extends React.Component {
   }
 
   onBlur(e){
-  this.props.phoneNumber(e)
+ this.props.phoneNumber(e)
   }
 
   render() {
@@ -172,15 +172,15 @@ class Index extends React.Component {
           <h5>剩余<b>{afterarea}</b>平方米</h5>
         </div>
         <Text list={select} onHande={this.onChange} onBande={this.onBlur.bind(this)}  area={afterarea}/>
-          <div className='inp'>
+          <div className='inpa'>
             <label>
               <span className="icon-3"></span>
               <p>手机号:</p>
                   </label>
-                <input type="number" onChange={this.onBlur.bind(this)}></input>
+                <input type="text" onChange={this.onBlur.bind(this)}/>
                 <b></b>
           </div>
-          <div className='inp like'>
+          <div className='inpa like'>
              <LikeButton/>
           </div>
         <h3>注:(剩余面积均默认为敞开办公区)</h3>
